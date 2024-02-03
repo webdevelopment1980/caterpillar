@@ -24,3 +24,10 @@
 .banner-text p {
     font-size: 25px;
 }
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .banner-text p {
+        font-size: 14px;
+    }
+}

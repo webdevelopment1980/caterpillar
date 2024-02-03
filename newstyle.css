@@ -1,0 +1,32 @@
+/* Custom styles for the banner */
+.banner-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 15%;
+    /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-text p {
+    font-size: 16px;
+    /* Adjust the font size as needed */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

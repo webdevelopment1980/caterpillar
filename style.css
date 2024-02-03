@@ -1,0 +1,72 @@
+/* Custom styles for the banner */
+.banner-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-text p {
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media query for small screens */
+@media (max-width: 576px) {
+    .banner-text p {
+        font-size: 14px;
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 577px) and (max-width: 992px) {
+    .banner-text p {
+        font-size: 18px;
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 993px) {
+    .banner-text p {
+        font-size: 40px;
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 993px) {
+    .banner-img {
+        width: 45%;
+        height: auto;
+        display: flex;
+        align-self: center;
+    }
+
+    .banner-text {
+        position: absolute;
+        top: 89%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        /* Adjust text color */
+        text-align: center;
+        /* font-size: 90px; */
+    }
+}

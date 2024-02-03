@@ -32,7 +32,7 @@ a {
 /* Media query for small screens */
 @media (max-width: 576px) {
     .banner-text p {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 

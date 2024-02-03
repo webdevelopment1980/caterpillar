@@ -1,0 +1,26 @@
+* Custom styles for the banner */ .banner-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Adjust text color */
+    text-align: center;
+    /* font-size: 90px; */
+}
+
+.banner-text p {
+    font-size: 25px;
+}

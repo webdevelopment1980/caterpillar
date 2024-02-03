@@ -1,4 +1,5 @@
-* Custom styles for the banner */ .banner-container {
+/* Custom styles for the banner */
+.banner-container {
     position: relative;
     max-width: 100%;
     overflow: hidden;
@@ -12,22 +13,59 @@
 
 .banner-text {
     position: absolute;
-    top: 89%;
-    left: 50%;
+    top: 92%;
+    left: 70%;
     transform: translate(-50%, -50%);
-    color: white;
-    /* Adjust text color */
+    color: black;
     text-align: center;
-    /* font-size: 90px; */
 }
 
 .banner-text p {
-    font-size: 25px;
+    width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 /* Media query for small screens */
 @media (max-width: 576px) {
     .banner-text p {
-        font-size: 14px;
+        font-size: 12px;
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 577px) and (max-width: 992px) {
+    .banner-text p {
+        font-size: 18px;
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 993px) {
+    .banner-text p {
+        font-size: 30px;
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 993px) {
+    .banner-img {
+        width: 45%;
+        height: auto;
+        display: flex;
+        align-self: center;
+    }
+
+    .banner-text {
+        position: absolute;
+        top: 90%;
+        left: 62%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        /* font-size: 90px; */
     }
 }

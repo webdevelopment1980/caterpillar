@@ -38,6 +38,13 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+         <!-- Add Navigation Buttons -->
+         <div class="swiper-button-prev">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next">
+            <i class="fas fa-chevron-right"></i>
+        </div>
     </center>
 
     <!-- Bootstrap JS and Popper.js CDN -->
@@ -60,6 +67,10 @@
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
     </script>

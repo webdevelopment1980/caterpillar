@@ -6,13 +6,14 @@
   <title>Bootstrap Links</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Turn.js CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css">
   <style>
-    /* Adjustments for flipbook container */
-    #flipbook-container {
-      width: 100%;
-      height: 500px;
+    body {
+      background-image: url('assests/Bg.png'); /* Replace 'your-image.jpg' with the path to your image */
+      background-size: cover;
+      background-position: center;
+    }
+    .img-sm {
+      max-width: 200px;
     }
   </style>
 </head>
@@ -20,47 +21,25 @@
 
   <div class="container">
     <div class="row mt-4">
+      <div class="col-md-12 text-center mb-4">
+        <img src="assests/logo.png" alt="Image" class="img-fluid img-sm">
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-6">
         <!-- Link to a website -->
         <a href="https://example.com" class="btn btn-primary btn-block" target="_blank">Visit Website</a>
       </div>
       <div class="col-md-6 mt-3 mt-md-0">
-        <!-- Link to the PDF file -->
-        <a href="Blush and Brown Simple Wellness Workbook PDF.pdf" id="pdf-link" class="btn btn-secondary btn-block" target="_blank">Open PDF</a>
+        <!-- Link to a PDF file -->
+        <a href="Push 360 Complete Brochure - Final (1).pdf" class="btn btn-secondary btn-block" target="_blank">Download PDF</a>
       </div>
     </div>
-    <!-- Container for the flip book -->
-    <div id="flipbook-container" class="mt-3" style="display: none;"></div>
   </div>
 
   <!-- Bootstrap JavaScript and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Turn.js JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Initialize Turn.js on the flipbook container
-      var flipbook = $('#flipbook-container').turn({
-        width: '100%',
-        height: 500,
-        autoCenter: true,
-        display: 'single'
-      });
-
-      // Hide the flipbook container by default
-      $('#flipbook-container').hide();
-
-      // Show flip book when the PDF link is clicked
-      $('#pdf-link').on('click', function(e) {
-        e.preventDefault();
-        // Show the flipbook container
-        $('#flipbook-container').show();
-        // Hide the PDF link
-        $(this).hide();
-      });
-    });
-  </script>
 </body>
 </html>
